@@ -1,7 +1,5 @@
-import csv
-
-with open("../2020/input/01.csv", 'r', newline='') as input:
-    nums = list(map(int,list(csv.reader(input, delimiter=','))[0]))
+file = open("../2020/input/01.txt", 'r')
+nums = [int(x) for x in file.read().splitlines()]
 
 # Part 1
 for num in nums:
